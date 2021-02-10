@@ -6,7 +6,6 @@
 {
 	font-family: "Raleway-Regular";
 	src: url(Raleway-Regular.ttf);
-	font-display: swap;
 }
 
 body
@@ -63,31 +62,27 @@ a
 	padding-right: 25%;
 }
 
-@media screen and (max-width: 1200px)			/* Suppression des marges pour un ecran taille tablette */
+.main_header a.logo
 {
-	.main_header
-	{
-		width: 100%;
-
-		padding: 0;
-	}
-
-	.logo
-	{
-		margin-left: 3%;
-	}
-
-	.signup_button
-	{
-		margin-right: 5%;
-	}
+	display: flex;
+	align-items: center;
 }
 
 .logo
 {
-	height: 60%;
+	height: 80%;
 
 	margin-right: auto;		/* Colle le logo à gauche */
+}
+
+@media screen and (max-width: 1200px)			/* Suppression des marges pour un ecran taille tablette */
+{
+	.main_header
+	{
+		width: 94%;
+
+		padding: 0 3%;
+	}
 }
 
 /* Barre de navigation principale (Hébergements/Activités) */
@@ -133,12 +128,19 @@ a
 	.main_header
 	{
 		flex-wrap: wrap;
+
+		width: 100%;
 		height: 8rem;
+
+		padding: 0;
 	}
 
 	.logo
 	{
 		order: 0;
+
+		margin-left: 3%;
+		height: 60%;
 	}
 
 	.signup_button
@@ -175,6 +177,11 @@ a
 	{
 		border-top: 0;
 		border-bottom: 3px solid #0065FC;
+	}
+
+	.signup_button
+	{
+		margin-right: 5%;
 	}
 }
 
