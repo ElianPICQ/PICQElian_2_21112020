@@ -1,6 +1,6 @@
 /* Feuille de Style CSS */
 /* OpenClassrooms projet 2 */
-/* Design pour Desktop */
+/* Design responsif */
 
 @font-face
 {
@@ -128,6 +128,56 @@ a
 	font-weight: bold;
 }
 
+@media screen and (max-width: 525px)					/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.main_header
+	{
+		flex-wrap: wrap;
+		height: 8rem;
+	}
+
+	.logo
+	{
+		order: 0;
+	}
+
+	.signup_button
+	{
+		order: 1;
+		display: block;
+	}
+
+	.main_nav
+	{
+		order: 2;
+		align-self: flex-end;
+		justify-content: center;
+		width: 100%
+	}
+
+	.nav_header
+	{
+		width: 50%;
+	}
+
+	.nav_header a
+	{
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		padding-bottom: .8rem;
+
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	.main_nav a:hover
+	{
+		border-top: 0;
+		border-bottom: 3px solid #0065FC;
+	}
+}
+
 /* FIN DU HEADER */
 
 
@@ -153,6 +203,16 @@ main
 
 		margin-left: 3%;
 		margin-right: 3%;
+	}
+}
+
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	main
+	{
+		width: 100%;
+
+		margin: 0;
 	}
 }
 
@@ -236,6 +296,38 @@ main
 	border-radius: 0 10px 10px 0;
 }
 
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.searchbox
+	{
+		width: 100%;
+		justify-content: center;
+	}
+
+	.icon_button
+	{
+		display: inline;
+	}
+
+	.text_button
+	{
+		display: none;
+	}
+
+	.searchbox button
+	{
+		width: 3rem;			/* height already 3rem (square button) */
+		
+		border-radius: 10px;
+	}
+
+	.searchbox button.fas
+	{
+		color: #FFF;
+	}
+}
+
+
 .filtres			/* Barre de filtres */
 {
 	display: flex;
@@ -318,6 +410,20 @@ main
 	margin-right: .5rem;
 }
 
+@media screen and (max-width: 525px)
+{
+	.body_header
+	{
+		width: 90%;
+		padding: 1rem 5%;
+	}
+
+	.filtres
+	{
+		flex-wrap: wrap;
+	}
+}
+
 /* Règles communes aux 3 sections (Hébergements/Populaires/Activités) */
 
 h2
@@ -360,6 +466,21 @@ h2
 {
 	background-color: #F2F2F2;
 	border-radius: 10px;
+}
+
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.locations
+	{
+		flex-direction: column-reverse;
+
+		margin-bottom: 3rem;
+	}
+
+	.locations .hebergements
+	{
+		background-color: #FFF;
+	}
 }
 
 /* Section hébergements */
@@ -453,12 +574,57 @@ h2
 	margin-bottom: 0%;
 }
 
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.hebergements
+	{
+		width: 100%;
+
+		padding: 0;
+	}
+
+	.hebergements h2
+	{
+		padding-left: 4%;
+	}
+
+	.vignettes_hebergements
+	{
+		flex-direction: column;
+	}
+
+	.vignettes_hebergements article
+	{
+		width: 90%;
+
+		margin: 0 5% 1rem 5%;
+	}
+
+	.photo_hebergement
+	{
+		height: 9rem;
+	}
+
+	.info_hebergement
+	{
+		padding: 2% 0 1% 4%;
+	}
+}
+
 /* FOOTER DE HEBERGEMENTS (bonton: afficher plus) */
 
 .hebergements footer
 {
 	font-weight: bold;
 	font-size: .9rem;
+}
+
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.hebergements footer
+	{
+		padding-left: 5%;
+	}
 }
 
 /* Section "Les plus populaires" */
@@ -545,6 +711,46 @@ i.fas.fa-chart-line
 {
 	margin-top: 1%;
 	margin-bottom: 0;
+}
+
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.locations .populaires
+	{
+		width: 100%;
+		padding: 5% 0;
+		margin: 0;
+		margin-bottom: 2rem;
+
+		border-radius: 0px;
+	}
+
+	.populaires header
+	{
+		width: 90%;
+		padding-left: 4%
+	}
+
+	.vignettes_populaires
+	{
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	.vignettes_populaires a
+	{
+		width: 100%;
+	}
+
+	.vignettes_populaires article
+	{
+		margin-bottom: 1rem;
+	}
+
+	.info_pop
+	{
+		padding: 1.5% 0 1.5% 3%;
+	}
 }
 
 /* SECTION ACTIVITES */
@@ -664,6 +870,39 @@ i.fas.fa-chart-line
 	font-size: .9rem;
 }
 
+@media screen and (max-width: 525px)		/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.activites h2
+	{
+		padding-left: 4%;
+		margin-bottom: 2rem;
+	}
+
+	.vignettes_activites
+	{
+		flex-direction: column;
+	}
+
+	.vignettes_activites a, .vignettes_activites .activite_column
+	{
+		width: 90%;
+		margin: 0 5% 1rem 5%;
+	}
+
+	.vignettes_activites .activite_column
+	{
+		width: 100%;
+		margin: 0;
+	}
+
+	.vieux_port .photo_activite, .parc_national_des_calanques .photo_activite, .fort_de_pomegues .photo_activite,
+	 .iles_du_frioul .photo_activite, .notre_dame_de_la_garde .photo_activite, .parc_longchamp .photo_activite
+	{
+		height: 12rem;
+		background-position: center;
+	}
+}
+
 /* FOOTER */
 
 .main_footer
@@ -700,5 +939,20 @@ i.fas.fa-chart-line
 	.main_footer
 	{
 		padding: 3% 5%;
+	}
+}
+
+@media screen and (max-width: 525px)			/*  Règles pour ecran taille mobile/tres petit écran */
+{
+	.main_footer
+	{
+		flex-direction: column;
+		
+		padding: 3% 5%;
+	}
+
+	.main_footer div
+	{
+		width: 100%;
 	}
 }
