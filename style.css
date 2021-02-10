@@ -63,6 +63,26 @@ a
 	padding-right: 25%;
 }
 
+@media screen and (max-width: 1200px)			/* Suppression des marges pour un ecran taille tablette */
+{
+	.main_header
+	{
+		width: 100%;
+
+		padding: 0;
+	}
+
+	.logo
+	{
+		margin-left: 3%;
+	}
+
+	.signup_button
+	{
+		margin-right: 5%;
+	}
+}
+
 .logo
 {
 	height: 60%;
@@ -123,6 +143,17 @@ main
 	padding-bottom: 2rem;
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+@media screen and (max-width: 1200px)		/* Suppression des marges pour un ecran taille tablette */
+{
+	main
+	{
+		width: 96%;
+
+		margin-left: 3%;
+		margin-right: 3%;
+	}
 }
 
 /* 2e HEADER */
@@ -662,4 +693,12 @@ i.fas.fa-chart-line
 .main_footer li
 {
 	margin-bottom: .7rem;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.main_footer
+	{
+		padding: 3% 5%;
+	}
 }
