@@ -1,0 +1,665 @@
+/* Feuille de Style CSS */
+/* OpenClassrooms projet 2 */
+/* Design pour Desktop */
+
+@font-face
+{
+	font-family: "Raleway-Regular";
+	src: url(Raleway-Regular.ttf);
+	font-display: swap;
+}
+
+body
+{
+	font-family: "Raleway-Regular", Arial, sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+
+	font-size: 1rem;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+.blue_star				/* Couleurs des étoiles de notation (bleu/gris) */
+{
+	color: #0065FC;
+}
+
+.grey_star
+{
+	color: #F2F2F2;
+}
+
+a:link					/* Comportement des liens par défaut */
+{
+	text-decoration: none;
+	color: #000;
+}
+
+a
+{
+	color: #000;
+}
+
+/* DEBUT DU HEADER */
+
+/* Définission du header principal (logo, navigation génarale, signup) */
+
+.main_header
+{
+	width: 100%;
+	height: 5rem;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.logo
+{
+	height: 60%;
+
+	margin-right: auto;		/* Colle le logo à gauche */
+}
+
+/* Barre de navigation principale (Hébergements/Activités) */
+
+.main_nav
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* boutons hébergements/activités */
+
+.nav_header a
+{
+	padding-top: 1.8rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.main_nav a:hover
+{
+	color: #0065FC;
+
+	border-top: 3px solid #0065FC;
+}
+
+/* Bouton "S'inscrire" */
+
+.main_header .signup_button
+{
+	color: #0065FC;		/* Fixer la bonne couleur */
+
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 5%;
+
+	font-weight: bold;
+}
+
+/* FIN DU HEADER */
+
+
+
+/* DEBUT DU MAIN */
+
+/* Définission taille du main */
+
+main
+{
+	width: 50%;
+
+	padding-bottom: 2rem;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* 2e HEADER */
+
+.body_header
+{
+	width: 100%;
+}
+
+.main_title
+{
+	font-size: 1.2rem;
+	font-weight: 500;
+
+	margin-bottom: .5rem;
+}
+
+.main_title + h4
+{
+	font-size: 0.9rem;
+	font-weight: normal;
+
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.searchbox			/* Barre de recherches */
+{
+	display: flex;
+
+	height: 3rem;
+
+	margin-bottom: .5rem
+}
+.map_marker_searchbar
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #F2F2F2;
+
+	width: 3rem;
+	height: 3rem;
+
+	border-radius: 10px 0 0 10px;
+}
+
+#site-search
+{
+	width: 12rem;
+	font-weight: 600;
+	font-size: .9rem;
+
+	padding: 0 .8rem;
+
+	border: 1px solid #F2F2F2;
+}
+
+.icon_button
+{
+	display: none;
+}
+
+.searchbox button span
+{
+	color: #FFF;
+}
+
+.searchbox button
+{
+	height: 3rem;
+	width: 6.5rem;
+
+	margin-left: -5px;
+
+	background-color: #0065FC;
+
+	border: none;
+	border-radius: 0 10px 10px 0;
+}
+
+.filtres			/* Barre de filtres */
+{
+	display: flex;
+	align-items: flex-start;
+
+	margin-top: 1.7rem;
+}
+
+.filtres p
+{
+	font-weight: bold;
+
+	margin-top: .7rem;
+	margin-right: 2rem;
+}
+
+.filters
+{
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+}
+
+.filtres ul li
+{
+	display: flex;
+	flex-direction: row;
+
+	margin-right: 1rem;
+	margin-bottom: .5rem;
+
+	border: 2px solid #F2F2F2;
+	border-radius: 20px;
+}
+
+.filtres ul li:active
+{
+	box-shadow: 1px 1px 10px black inset;
+}
+
+.filters .icon
+{
+	display: flex;
+
+	height: 2.25rem;
+	width: 2.25rem;
+
+	background-color: #DEEBFF;
+
+	border-radius: 50%;
+}
+
+.icon .fas
+{
+	margin: auto;
+
+	color: #0065FC;
+}
+
+
+.filter_text
+{
+	padding: .5rem .7rem;
+}
+
+.info_header
+{
+	font-size: 0.9rem;
+	font-weight: normal;
+
+	margin: 1rem 0 1.5rem 0;
+}
+
+.info_header .fas
+{
+	color: #0065FC;
+
+	margin-right: .5rem;
+}
+
+/* Règles communes aux 3 sections (Hébergements/Populaires/Activités) */
+
+h2
+{
+	margin: 0;
+
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.info_hebergement h4, .info_pop h4, .vignettes_populaires article h4
+{
+	font-size: .8rem;
+	font-weight: bold;
+
+	margin: 0;
+} 
+
+.info_hebergement p, .info_pop p
+{
+	font-size: .8rem;
+}
+
+.star_rating .fas
+{
+	font-size: .7rem;
+}
+
+/* SECTIONS PRINCIPALES DU CORPS DE PAGE (hébergements, populaires) */
+
+.locations
+{
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 4%;
+}
+
+.locations section
+{
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+/* Section hébergements */
+
+.hebergements
+{
+	width: 60%;
+
+	padding: 2% 1% 2% 3%;			/* padding-right = 1% et non 3 car les vignettes ont 2% de margin-right */
+}
+
+.vignettes_hebergements
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-top: 1rem;
+}
+
+.vignettes_hebergements article
+{
+	display: flex;
+	flex-direction: column;
+
+	width: 30%;
+	padding: .5%;
+	margin-bottom: 2%;
+
+	background-color: #FFF;
+
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 5px #F2F2F2;
+}
+
+.photo_hebergement							/* Comportement des photos dans les vignettes */
+{
+	background-size: cover;
+	background-position: left;
+
+	height: 5.5rem;
+
+	border-radius: 10px 10px 0 0;
+}
+
+.auberge_la_cannebiere .photo_hebergement	/* lien vers les photos des vignettes (6) */
+{
+	background-image: url(ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.hotel_du_port .photo_hebergement
+{
+	background-image: url(ressources/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.hotel_les_mouettes .photo_hebergement
+{
+	background-image: url(ressources/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.hotel_de_la_mer .photo_hebergement
+{
+	background-image: url(ressources/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.auberge_le_panier .photo_hebergement
+{
+	background-image: url(ressources/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.hotel_chez_amina .photo_hebergement
+{
+	background-image: url(ressources/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.info_hebergement				/* Infos complementaires à l'image nom/prix/rating */
+{
+	padding: 4%;
+	padding-bottom: 1%;
+}
+
+.info_hebergement p
+{
+	margin-top: 1%;
+	margin-bottom: 0%;
+}
+
+.info_hebergement .star_rating
+{
+	margin-top: 1%;
+	margin-bottom: 0%;
+}
+
+/* FOOTER DE HEBERGEMENTS (bonton: afficher plus) */
+
+.hebergements footer
+{
+	font-weight: bold;
+	font-size: .9rem;
+}
+
+/* Section "Les plus populaires" */
+
+.populaires
+{
+	width: 30%;
+	padding: 2%;
+}
+
+.populaires header 				/* titre + lien pour plus */
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+i.fas.fa-chart-line
+{
+	font-size: 1.2rem;
+}
+
+.vignettes_populaires
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 86%;
+
+	margin-top: 1rem;
+}
+
+.vignettes_populaires article
+{
+	display: flex;
+	flex-direction: row;
+
+	padding: 1%;
+
+	background-color: #FFF;
+
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 5px #F2F2F2;
+}
+
+.photo_populaire							/* Comportement des photos dans les vignettes */
+{
+	background-size: cover;
+	background-position: center;
+
+	height: 6.5rem;
+	min-width: 35%;
+
+	border-radius: 10px 0 0 10px;
+}
+
+.hotel_le_soleil .photo_populaire
+{
+	background-image: url(ressources/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.au_coeur_de_leau .photo_populaire
+{
+	background-image: url(ressources/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.hotel_tout_bleu_et_blanc .photo_populaire
+{
+	background-image: url(ressources/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+.info_pop
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	max-width: 55%;
+
+	padding: 3%;
+}
+
+.info_pop div p
+{
+	margin-top: 1%;
+	margin-bottom: 0;
+}
+
+/* SECTION ACTIVITES */
+
+.vignettes_activites
+{
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 2%;
+}
+
+.activite_column
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 22%;
+}
+
+.vignettes_activites a			/* Comportement des grandes vignettes (2) */
+{ 
+	display: flex;
+	flex-direction: column;
+
+	width: 22%;
+
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 5px #F2F2F2;
+}
+
+ .activite_column a
+ {
+ 	width: 100%;
+	box-shadow: 1px 1px 5px 5px #F2F2F2;
+ }
+
+.activite_column a article			/* Comprtement des vignettes plus petites (4) */
+ {
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 10px;
+ }
+
+.photo_activite						/* Comportement des photos dans "Activités à Marseille" */
+{
+	background-size: cover;
+	background-position: top;
+
+	border-radius: 10px 10px 0 0;
+}
+
+.vieux_port .photo_activite, .parc_national_des_calanques .photo_activite		/* Taille des photos (Desktop) */
+{
+	height: 20rem;
+}
+
+.fort_de_pomegues .photo_activite
+{
+	height: 10rem;
+	background-position: left;
+}
+
+.iles_du_frioul .photo_activite
+{
+	height: 6rem;
+	background-position: right;
+}
+
+.notre_dame_de_la_garde .photo_activite
+{
+	height: 7rem;
+}
+
+.parc_longchamp .photo_activite
+{
+	height: 9rem;
+}
+
+.vieux_port .photo_activite
+{
+	background-image: url(ressources/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.fort_de_pomegues .photo_activite
+{
+	background-image: url(ressources/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+
+.iles_du_frioul .photo_activite
+{
+	background-image: url(ressources/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+
+.parc_national_des_calanques .photo_activite
+{
+	background-image: url(ressources/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.notre_dame_de_la_garde .photo_activite
+{
+	background-image: url(ressources/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+
+.parc_longchamp .photo_activite
+{
+	background-image: url(ressources/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+
+.vignettes_activites article h4
+{
+	padding: 5%;
+	margin: 0;
+
+	font-size: .9rem;
+}
+
+/* FOOTER */
+
+.main_footer
+{
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 25%;
+	padding-right: 25%;
+
+	width: 100%;
+	background-color: #F2F2F2;
+}
+
+.main_footer div
+{
+	width: 30%;
+}
+
+.main_footer ul
+{
+	padding: 0;
+}
+
+.main_footer li
+{
+	margin-bottom: .7rem;
+}
