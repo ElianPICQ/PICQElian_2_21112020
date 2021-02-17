@@ -941,14 +941,6 @@ i.fas.fa-chart-line
 	margin-bottom: .7rem;
 }
 
-@media screen and (max-width: 1200px)
-{
-	.main_footer
-	{
-		padding: 3% 5%;
-	}
-}
-
 @media screen and (max-width: 525px)			/*  Règles pour ecran taille mobile/tres petit écran */
 {
 	.main_footer
@@ -961,5 +953,13 @@ i.fas.fa-chart-line
 	.main_footer div
 	{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px)
+{
+	.main_footer
+	{
+		padding: 3% 5%;
 	}
 }
