@@ -7,3 +7,6 @@ Code uniquement en HTML et CSS "brut".
 Pas de framework.
 
 Design responsif Desktop/Mobile
+
+Lien Github Pages:
+https://elianpicq.github.io/PICQElian_2_23112020/
