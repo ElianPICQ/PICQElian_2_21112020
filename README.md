@@ -1,7 +1,8 @@
 # PICQElian_2_23112020
 
 Formation OpenClassrooms Développeur Web - Projet 2 
-https://openclassrooms.com/fr/paths/185/projects/639/assignment
+
+Réaliser un site web à partir d'un cahier des charges et d'une maquette
 
 Code uniquement en HTML et CSS "brut".
 Pas de framework.
